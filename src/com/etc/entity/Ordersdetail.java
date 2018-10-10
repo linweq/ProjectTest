@@ -6,8 +6,27 @@ public class Ordersdetail {
     private Integer orderid;
 
     private Integer foodid;
-
     private Integer num;
+
+    
+    @Override
+	public String toString() {
+		return "Ordersdetail [id=" + id + ", orderid=" + orderid + ", foodid=" + foodid + ", num=" + num + "]";
+	}
+
+	public Ordersdetail() {
+		super();
+	}
+
+	public Ordersdetail(Integer id, Integer orderid, Integer foodid, Integer num) {
+		super();
+		this.id = id;
+		this.orderid = orderid;
+		this.foodid = foodid;
+		this.num = num;
+	}
+
+	
 
     public Integer getId() {
         return id;

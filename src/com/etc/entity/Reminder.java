@@ -3,7 +3,24 @@ package com.etc.entity;
 import java.util.Date;
 
 public class Reminder {
-    private Integer id;
+    public Reminder() {
+		super();
+	}
+
+	public Reminder(Integer id, Integer userid, Integer busid, Date remdate) {
+		super();
+		this.id = id;
+		this.userid = userid;
+		this.busid = busid;
+		this.remdate = remdate;
+	}
+
+	@Override
+	public String toString() {
+		return "Reminder [id=" + id + ", userid=" + userid + ", busid=" + busid + ", remdate=" + remdate + "]";
+	}
+
+	private Integer id;
 
     private Integer userid;
 

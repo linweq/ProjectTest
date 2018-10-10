@@ -3,7 +3,27 @@ package com.etc.entity;
 import java.util.Date;
 
 public class Orders {
-    private Integer id;
+    public Orders() {
+		super();
+	}
+
+	public Orders(Integer id, Integer userid, Integer busid, Date orddate, Double money, Integer state) {
+		super();
+		this.id = id;
+		this.userid = userid;
+		this.busid = busid;
+		this.orddate = orddate;
+		this.money = money;
+		this.state = state;
+	}
+
+	@Override
+	public String toString() {
+		return "Orders [id=" + id + ", userid=" + userid + ", busid=" + busid + ", orddate=" + orddate + ", money="
+				+ money + ", state=" + state + "]";
+	}
+
+	private Integer id;
 
     private Integer userid;
 

@@ -9,7 +9,26 @@ public class Boss {
 
     private String pwd;
 
-    private Date regdate;
+    @Override
+	public String toString() {
+		return "Boss [id=" + id + ", account=" + account + ", pwd=" + pwd + ", regdate=" + regdate + ", state=" + state
+				+ "]";
+	}
+
+	public Boss() {
+		super();
+	}
+
+	public Boss(Integer id, String account, String pwd, Date regdate, Integer state) {
+		super();
+		this.id = id;
+		this.account = account;
+		this.pwd = pwd;
+		this.regdate = regdate;
+		this.state = state;
+	}
+
+	private Date regdate;
 
     private Integer state;
 

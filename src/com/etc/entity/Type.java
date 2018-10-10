@@ -1,7 +1,23 @@
 package com.etc.entity;
 
 public class Type {
-    private Integer id;
+    public Type() {
+		super();
+	}
+
+	public Type(Integer id, String title, Integer pid) {
+		super();
+		this.id = id;
+		this.title = title;
+		this.pid = pid;
+	}
+
+	@Override
+	public String toString() {
+		return "Type [id=" + id + ", title=" + title + ", pid=" + pid + "]";
+	}
+
+	private Integer id;
 
     private String title;
 

@@ -1,7 +1,33 @@
 package com.etc.entity;
 
 public class Food {
-    private Integer id;
+    public Food() {
+		super();
+	}
+
+	public Food(Integer id, String foodname, Double price, Double discount, Integer num, Integer salnum, String des,
+			String logo, Integer busid, Integer state) {
+		super();
+		this.id = id;
+		this.foodname = foodname;
+		this.price = price;
+		this.discount = discount;
+		this.num = num;
+		this.salnum = salnum;
+		this.des = des;
+		this.logo = logo;
+		this.busid = busid;
+		this.state = state;
+	}
+
+	@Override
+	public String toString() {
+		return "Food [id=" + id + ", foodname=" + foodname + ", price=" + price + ", discount=" + discount + ", num="
+				+ num + ", salnum=" + salnum + ", des=" + des + ", logo=" + logo + ", busid=" + busid + ", state="
+				+ state + "]";
+	}
+
+	private Integer id;
 
     private String foodname;
 

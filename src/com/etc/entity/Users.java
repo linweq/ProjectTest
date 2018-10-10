@@ -3,7 +3,26 @@ package com.etc.entity;
 import java.util.Date;
 
 public class Users {
-    private Integer id;
+    public Users() {
+		super();
+	}
+
+	public Users(Integer id, String account, String pwd, Date regdate, Integer state) {
+		super();
+		this.id = id;
+		this.account = account;
+		this.pwd = pwd;
+		this.regdate = regdate;
+		this.state = state;
+	}
+
+	@Override
+	public String toString() {
+		return "Users [id=" + id + ", account=" + account + ", pwd=" + pwd + ", regdate=" + regdate + ", state=" + state
+				+ "]";
+	}
+
+	private Integer id;
 
     private String account;
 

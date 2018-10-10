@@ -1,7 +1,24 @@
 package com.etc.entity;
 
 public class City {
-    private Integer id;
+    @Override
+	public String toString() {
+		return "City [id=" + id + ", cityname=" + cityname + ", lat=" + lat + ", lon=" + lon + "]";
+	}
+
+	public City() {
+		super();
+	}
+
+	public City(Integer id, String cityname, Double lat, Double lon) {
+		super();
+		this.id = id;
+		this.cityname = cityname;
+		this.lat = lat;
+		this.lon = lon;
+	}
+
+	private Integer id;
 
     private String cityname;
 

@@ -3,7 +3,32 @@ package com.etc.entity;
 import java.util.Date;
 
 public class Customers {
-    private Integer id;
+    public Customers() {
+		super();
+	}
+
+	public Customers(Integer id, String custname, String phone, Date regdate, String address, Integer userid,
+			Double lat, Double lon, Integer state) {
+		super();
+		this.id = id;
+		this.custname = custname;
+		this.phone = phone;
+		this.regdate = regdate;
+		this.address = address;
+		this.userid = userid;
+		this.lat = lat;
+		this.lon = lon;
+		this.state = state;
+	}
+
+	@Override
+	public String toString() {
+		return "Customers [id=" + id + ", custname=" + custname + ", phone=" + phone + ", regdate=" + regdate
+				+ ", address=" + address + ", userid=" + userid + ", lat=" + lat + ", lon=" + lon + ", state=" + state
+				+ "]";
+	}
+
+	private Integer id;
 
     private String custname;
 
