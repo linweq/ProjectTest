@@ -28,7 +28,7 @@ public class Message {
 	public static String userAgent = "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36";
 
 	// 配置您申请的KEY
-	public static final String APPKEY = "464968c774ce59a1e0c0f9cb07970c22";
+	public static final String APPKEY = "43f450ccb88480d19d81d0d338434875";
 
 	// 1.屏蔽词检查测
 	public static void getRequest1() {
