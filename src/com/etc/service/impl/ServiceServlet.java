@@ -1,4 +1,4 @@
-package com.etc.dao.impl;
+package com.etc.service.impl;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class Test
+ * Servlet implementation class ServiceServlet
  */
-@WebServlet("/t.do")
-public class Test extends HttpServlet {
+@WebServlet("/ServiceServlet")
+public class ServiceServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Test() {
+    public ServiceServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -27,7 +27,7 @@ public class Test extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().print("ss");
+		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**
