@@ -2,7 +2,7 @@ package com.etc.entity;
 
 import java.util.Date;
 
-public class Users {
+public class Boss {
     private Integer id;
 
     private String account;

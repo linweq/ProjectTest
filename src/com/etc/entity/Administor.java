@@ -1,17 +1,11 @@
 package com.etc.entity;
 
-import java.util.Date;
-
-public class Users {
+public class Administor {
     private Integer id;
 
     private String account;
 
     private String pwd;
-
-    private Date regdate;
-
-    private Integer state;
 
     public Integer getId() {
         return id;
@@ -35,21 +29,5 @@ public class Users {
 
     public void setPwd(String pwd) {
         this.pwd = pwd == null ? null : pwd.trim();
-    }
-
-    public Date getRegdate() {
-        return regdate;
-    }
-
-    public void setRegdate(Date regdate) {
-        this.regdate = regdate;
-    }
-
-    public Integer getState() {
-        return state;
-    }
-
-    public void setState(Integer state) {
-        this.state = state;
     }
 }
