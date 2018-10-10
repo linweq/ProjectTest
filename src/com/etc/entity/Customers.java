@@ -21,12 +21,32 @@ public class Customers {
 		this.state = state;
 	}
 
+	//2018年10月10日14:07:20 CZD 
+	public Customers(String account, Integer id, String custname, String phone, Date regdate, String address,
+			Integer userid, Double lat, Double lon, Integer state) {
+		super();
+		this.account = account;
+		this.id = id;
+		this.custname = custname;
+		this.phone = phone;
+		this.regdate = regdate;
+		this.address = address;
+		this.userid = userid;
+		this.lat = lat;
+		this.lon = lon;
+		this.state = state;
+	}
+
 	@Override
 	public String toString() {
-		return "Customers [id=" + id + ", custname=" + custname + ", phone=" + phone + ", regdate=" + regdate
-				+ ", address=" + address + ", userid=" + userid + ", lat=" + lat + ", lon=" + lon + ", state=" + state
-				+ "]";
+		return "Customers [account=" + account + ", id=" + id + ", custname=" + custname + ", phone=" + phone
+				+ ", regdate=" + regdate + ", address=" + address + ", userid=" + userid + ", lat=" + lat + ", lon="
+				+ lon + ", state=" + state + "]";
 	}
+
+
+	//2018年10月10日14:05:08 添加 用户名字段     Czd
+	private  String account;
 
 	private Integer id;
 
@@ -45,8 +65,17 @@ public class Customers {
     private Double lon;
 
     private Integer state;
+    
+    //2018年10月10日14:08:40  CZD
+    public String getAccount() {
+		return account;
+	}
 
-    public Integer getId() {
+	public void setAccount(String account) {
+		this.account = account;
+	}
+
+	public Integer getId() {
         return id;
     }
 
